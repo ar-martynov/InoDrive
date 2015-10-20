@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>InoDrive: сервис для быстрого поиска попутчиков.</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="Content/pace/themes/blue/pace-theme-fill-left.css" rel="stylesheet">
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="Content/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="Content/ion.rangeSlider.css" rel="stylesheet">
+    <link href="Content/ion.rangeSlider.css" rel="stylesheet">
+    <link href="Content/ion.rangeSlider.skinNice.css" rel="stylesheet">
+    <link href="Content/normalize.css" rel="stylesheet">
+    <link href="Content/jquery.raty.css" rel="stylesheet">
+    <link href="Content/toastr.min.css" rel="stylesheet">
+    <link href="Content/font-awesome.min.css" rel="stylesheet">
+    <link href="Content/lightbox.css" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet">
+    <link rel="shortcut icon" href="about:blank">
+
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+<body>
+    
+        <div id="header"></div>
+    <div class="wrapper">
+        <div id="page" class="container"></div>
+    </div>
+        <div class="footer">
+            <div class="container">
+                <hr />
+                <p class="pull-left">&copy; 2015 Inostudio Solutions. </p>
+                <p class="pull-right">Powered by  <a href="http://backbonejs.org/" target="_blank">Backbone.js</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+            </div>
+        </div>
+    
+    <script type='text/javascript' src="Scripts/pace.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <script type='text/javascript' src="Scripts/jquery-1.11.3.min.js"></script>
+    <script type='text/javascript' src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script type='text/javascript' src="Scripts/jquery.geocomplete.js"></script>
+    <script type='text/javascript' src="Scripts/jquery.raty.js"></script>
+    <script type='text/javascript' src="Scripts/toastr.min.js"></script>
+    <script type='text/javascript' src="Scripts/underscore.min.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap.min.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap-fileinput.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap-datepicker.min.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap-bootpage.min.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap-tagsinput.min.js"></script>
+    <script type='text/javascript' src="Scripts/lightbox.min.js"></script>
+    <script type='text/javascript' src="Scripts/backbone.min.js"></script>
+    <script type='text/javascript' src="Scripts/backbone.epoxy.min.js"></script>
+    <script type='text/javascript' src="Scripts/backbone-validation-min.js"></script>
+    <script type='text/javascript' src="Scripts/json2.min.js"></script>
+    <script type='text/javascript' src="Scripts/moment-with-locales.min.js"></script>
+    <script type='text/javascript' src="Scripts/ion.rangeSlider.min.js"></script>
+
+    <script type="text/javascript" src="signalr/hubs"></script>
+
+    <!--App-->
+    <script type='text/javascript' src="app/extensions.js"></script>
+    <script type='text/javascript' src="app/app.js"></script>
+    <script type='text/javascript' src="app/router.js"></script>
+    <script type='text/javascript' src="app/templates.js"></script>
+
+    <!-- Hubs -->
+    <script type='text/javascript' src="app/hubs/bidsHub.js"></script>
+
+    <!-- Collections -->
+    <script type='text/javascript' src="app/collections/toursCollection.js"></script>
+    <script type='text/javascript' src="app/collections/waypointsCollection.js"></script>
+
+    <!--Models-->
+    <script type='text/javascript' src="app/models/tours/baseTourModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/myToursModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/bidsToursModels.js"></script>
+    <script type='text/javascript' src="app/models/tours/shortTourSearchResultModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/tourAdvancedSearchModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/tourModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/tourProfileModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/tourSearchModel.js"></script>
+    <script type='text/javascript' src="app/models/tours/tourSearchResultModel.js"></script>
+    <script type='text/javascript' src="app/models/cityModels.js"></script>
+    <script type='text/javascript' src="app/models/loginModel.js"></script>
+    <script type='text/javascript' src="app/models/registrationModel.js"></script>
+    <script type='text/javascript' src="app/models/sessionModel.js"></script>
+    <script type='text/javascript' src="app/models/userModel.js"></script>
+
+    
+    <!--Views-->
+    <script type='text/javascript' src="app/views/userBidsView.js"></script>
+    <script type='text/javascript' src="app/views/tourProfileView.js"></script>
+    <script type='text/javascript' src="app/views/createTourView.js"></script>
+    <script type='text/javascript' src="app/views/headerView.js"></script>
+    <script type='text/javascript' src="app/views/searchTourView.js"></script>
+    <script type='text/javascript' src="app/views/loginView.js"></script>
+    <script type='text/javascript' src="app/views/mapView.js"></script>
+    <script type='text/javascript' src="app/views/userProfileViews.js"></script>
+    <script type='text/javascript' src="app/views/registerView.js"></script>
+    <script type='text/javascript' src="app/views/tourViews.js"></script>
+    <script type='text/javascript' src="app/views/advancedSearchTourProfileView.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            App.Init();
+        })
+    </script>
+
+</body>
+</html>

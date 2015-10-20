@@ -1,0 +1,40 @@
+﻿<!-- Static navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#/">
+                    <img class="navbar-brand" src="../Content/images/traffic17.png" height="32" />
+                    <span id="logo" class="navbar-brand">InoDrive</span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle " data-toggle="dropdown" href="">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true" />&nbsp;
+                            <strong><span id="fullName"></span></strong>  &nbsp;
+                            <span class="label label-primary" id="allNotifies" aria-hidden="true">20</span>&nbsp;
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/tours">Мои объявления <span id="myAds" class="label label-primary pull-right" aria-hidden="true">17</span></a></li>
+                            <li><a href="#/bids/mybids">Мои заявки <span id="myBids" class="label label-primary pull-right" aria-hidden="true">3</span></a></li>
+                            <li><a href="#/user/profile">Мой профиль</a></li>
+                            <li><a href="#/tours/search">Искать поездку</a></li>
+                            <li><a href="#/tours/create">Предложить поездку</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#/" id="logout"><span class="glyphicon glyphicon-off" /> Выйти</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </div>
+</div>

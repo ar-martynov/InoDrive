@@ -1,0 +1,76 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <h4 class="pull-left" id="title">Создание новой поездки</h4>
+    </div>
+</div>
+<div class="row" style="margin: 20px 0px 0px 0px">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <label for="startCity" class="control-label"><b>Откуда:</b></label>
+                            <input type="text" class="form-control" id="startCity" name="startCity" placeholder="Пункт отправления">
+                            <span class="help-block pull-right"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="destCity" class="control-label"><b>Куда:</b></label>
+                            <input type="text" class="form-control" id="destCity" name="destCity" placeholder="Пункт назначения">
+                            <span class=" help-block pull-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="expirationDate" class="control-label"><b>Дата:</b></label>
+                            <input type="text" class="form-control" id="expirationDate" name="expirationDate" placeholder="Дата поездки">
+                            <span class="help-block pull-right"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                            <label for="freeSlots" class="control-label"><b>Мест:</b></label>
+                            <input type="number" min="1" max="8" class="form-control" id="freeSlots" name="freeSlots">
+                            <span class="help-block pull-right"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group" id="paymentTooltip" data-toggle="tooltip">
+                            <label for="payment" class="control-label"><b>Сумма с чел. *:</b></label>
+                            <input type="number" min="0" class="form-control" id="payment" name="payment">
+                            <span class="help-block pull-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="waypoints" class="control-label"><b>Промежуточные пункты:</b></label>
+                    <input type="text" class="form-control " id="waypoints" placeholder="Новый пункт" />
+                    <input type="text" class="form-control" id="tags" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="mapCanvas" class="mapCanvas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tourProfile" class="collapse"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group  pull-right">
+                    <div class="btn-group" data-toggle="buttons">
+                        <a class="btn btn-default btn-xs" data-toggle="collapse" href="#tourProfile" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Расширенные настройки
+                        </a>
+                    </div>
+                    <button id="createTourBtn" type="button" class="btn btn-primary btn-action ">Создать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

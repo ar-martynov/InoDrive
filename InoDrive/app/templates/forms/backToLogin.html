@@ -1,0 +1,34 @@
+﻿<form class="form-horizontal" id="loginForm">
+    <div class="modal-body">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label class="control-label" for="userName"><b>E-mail</b></label>
+                <input class="form-control input-sm" type="text" id="userName" name="userName" placeholder="Введите E-mail">
+                <span class="help-block  pull-right" id="errorlabel"></span>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label class="control-label" for="password"><b>Пароль</b></label>
+                <input class="form-control input-sm" type="password" id="password" name="password" placeholder="Введите пароль">
+                <span class="help-block  pull-right"></span>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="rememberMe" id="rememberMe" value="true">
+                        Запомнить меня
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a id="retorePassword" class="pull-left" href="#/">Забыли пароль?</a>
+        <a class="btn btn-sm" data-dismiss="modal" aria-hidden="true" id="loginClose">Закрыть</a>
+        <a class="btn btn-primary btn-sm" id="login">Войти</a>
+    </div>
+</form>

@@ -1,0 +1,2 @@
+﻿Update-database -configuration Domain.Migrations.Configuration -project Domain -verbose
+Add-Migration -configuration Domain.Migrations.Configuration MIGRATION_NAME -project Domain  

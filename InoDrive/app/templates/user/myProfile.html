@@ -1,0 +1,102 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <h4 class="pull-left">Профиль пользователя</h4>
+        <ul class="breadcrumb pull-right" role="tablist">
+            <li class="active" role="presentation"><a href="#profileChange" id="profileTab" data-toggle="tab" aria-expanded="true" aria-controls="profileChange">Личные данные</a></li>
+            <li class="" role="presentation"><a href="#loginChange" id="mailTab" data-toggle="tab" aria-expanded="false" aria-controls="mailChange">Сменить E-mail</a></li>
+            <li class="" role="presentation"><a href="#passChange" id="passTab" data-toggle="tab" aria-expanded="false" aria-controls="passChange">Сменить пароль</a></li>
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div id="myTabContent" class="tab-content">
+            <!--Profile Tab-->
+            <div class="tab-pane fade active in" id="profileChange" role="tabpanel" aria-labelledby="profileTab">
+                <div class="row" id="content">
+                    <div class="col-sm-2">
+                        <form id="userImageForm" enctype="multipart/form-data">
+                            <div align="center">
+                                <img width="309" height="232" class="img-thumbnail" id="userAvatar">
+                                <div class=" center-block ">
+                                    <a class=" btn btn-default btn-xs" id="avatarUpload">Загрузить</a>
+                                    <a class="btn btn-default btn-xs">Удалить</a>
+                                    <input type="file" name="avatarPath" id="uploadAvatarField" class="hidden" accept="image/*">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="FirstName"><b>Имя</b></label>
+                                    <div class="controls">
+                                        <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Введите имя">
+                                    </div>
+                                    <span class="help-block hidden pull-right"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="LastName"><b>Фамилия</b></label>
+                                    <div class="controls">
+                                        <input class="form-control  " type="text" id="lastName" name="lastName" placeholder="Введите фамилию">
+                                    </div>
+                                    <span class="help-block hidden pull-right"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="age"><b>Возраст</b></label>
+                                    <div class="controls">
+                                        <input class="form-control" type="text" id="age" name="age" placeholder="Введите возраст">
+                                    </div>
+                                    <span class="help-block hidden pull-right"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="phone"><b>Телефон</b></label>
+                                    <div class="controls">
+                                        <input class="form-control" type="text" id="phone" name="phone" placeholder="Введите номер телефона">
+                                    </div>
+                                    <span class="help-block hidden pull-right"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="control-label" for="publicEmail"><b>E-mail</b></label>
+                                    <div class="controls">
+                                        <input class="form-control" type="email" id="publicEmail" name="publicEmail" placeholder="Введите публичный E-mail">
+                                    </div>
+                                    <span class="help-block hidden pull-right"></span>
+                                    <h6><small>Этот адрес будет представлен другим пользователям и может не совпадать с Вашим основным</small></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label class="control-label" for="About"><b>О себе</b></label>
+                                    <div class="controls">
+                                        <textarea class="form-control" rows="3" id="about" name="about" placeholder="Расскажите немного о себе"
+                                                  data-bind=""></textarea>
+                                    </div>
+                                    <span class="help-block hidden pull-right"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="updateProfileBtn" class="btn btn-primary btn-sm pull-right">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+            <!--Mail Tab-->
+            <div class="tab-pane fade" id="loginChange" role="tabpanel" aria-labelledby="mailTab">
+            </div>
+            <!--Password Tab-->
+            <div class="tab-pane fade" id="passChange" role="tabpanel" aria-labelledby="passTab">
+            </div>
+        </div>
+    </div>
+</div>

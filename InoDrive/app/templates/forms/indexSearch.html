@@ -1,0 +1,35 @@
+<h3 class="text-center">Искать машину</h3>
+<br />
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-3">
+        <div class="form-group ">
+            <label for="startCity" class="control-label"><b>Откуда:</b></label>
+            <input type="text" class="form-control" id="startCity" name="startCity" placeholder="Введите пункт отправления">
+            <span class="help-block  pull-right"></span>
+        </div>
+        <div class="form-group ">
+            <label for="destCity" class="control-label"><b>Куда:</b></label>
+            <input type="text" class="form-control" id="destCity" name="destCity" placeholder="Введите пункт назначения">
+            <span class="help-block  pull-right"></span>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group  ">
+            <label for="expirationDate" class="control-label"><b>Дата:</b></label>
+            <input type="text" class="form-control" id="expirationDate" name="expirationDate" placeholder="Введите дату поездки">
+            <span class="help-block  pull-right"></span>
+        </div>
+        <div class="form-group ">
+            <label for="freeSlots" class="control-label"><b>Людей:</b></label>
+            <input type="number" min="1" max="8" class="form-control" id="freeSlots" name="freeSlots" placeholder="Сколько человек едет?">
+            <span class="help-block pull-right"></span>
+        </div>
+    </div>
+</div>
+<br />
+<div class="row" align="center">
+    <div class="col-md-12 ">
+        <a href="#/tours/create" class="btn btn-primary">Предложить поездку</a>
+        <button type="button" id="indexSearchButton" class="btn btn-default  btn-sm"><span class="glyphicon glyphicon-search" /> &nbsp; Поиск</button>
+    </div>
+</div>
